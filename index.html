@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Презентация сайта SiteHere.ru</title>
+
+    <meta
+      name="description"
+      content="Интересная презентация моего сайта по теме сайтостроения"
+    />
+    <meta name="author" content="Юрий Немец" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <link rel="stylesheet" href="css/reveal.css" />
+    <link rel="stylesheet" href="css/theme/2p.css" id="theme" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Для подстветки синтаксиса -->
+    <link rel="stylesheet" href="lib/css/zenburn.css" />
+
+    <!--[if lt IE 9]>
+      <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="reveal">
+      <!-- Каждый блок <section> - это отдельный слайд -->
+      <div class="slides">
+        <!-- slide 1 -->
+        <section>
+          <h3>
+            <span class="logo_1">Dev.</span
+            ><span class="logo_2">Meetups()</span>
+          </h3>
+        </section>
+
+        <!-- slide 2 -->
+        <section>
+          <p class="grid">
+            CSS Grid Layout
+          </p>
+          <p class="vs">VS</p>
+          <p class="flex">Flexbox</p>
+        </section>
+
+        <!-- slide 3 -->
+
+        <section>
+          <p class="canweuse">
+            CAN WE USE IT...?
+          </p>
+          <img class="fragment" src="./images/grid.jpg" alt="caniuse" />
+          <p class="fragment global">Global 88.96%</p>
+        </section>
+
+        <!-- slide 4 -->
+        <section>
+          <img class="" src="./images/gridProper.jpg" alt="proper" />
+        </section>
+
+        <!-- slide 5 -->
+        <section class="code">
+          <h4 class="grid-property">Grid Container</h4>
+
+          <img class="grid-property-img" src="./images/container.jpg" alt="" />
+        </section>
+
+        <!-- slide 6 -->
+        <section class="code">
+          <h4 class="grid-property">Grid Item</h4>
+
+          <img class="grid-property-img" src="./images/grid_item.jpg" alt="" />
+        </section>
+
+        <!-- slide 7 -->
+        <section class="code">
+          <h4 class="grid-property">Grid Line</h4>
+
+          <img class="grid-property-img" src="./images/grid_line.jpg" alt="" />
+        </section>
+
+        <!-- slide 8 -->
+        <section class="code">
+          <h4 class="grid-property">Grid Track</h4>
+
+          <img class="grid-property-img" src="./images/grid_row.jpg" alt="" />
+        </section>
+
+        <!-- slide 9 -->
+        <section class="code">
+          <h4 class="grid-property">Grid Cell</h4>
+
+          <img
+            class="grid-property-img"
+            src="./images/grid_column.jpg"
+            alt=""
+          />
+        </section>
+
+        <!-- slide 10 -->
+        <section class="code">
+          <h4 class="grid-property">Grid Area</h4>
+
+          <img class="grid-property-img" src="./images/grid_area.jpg" alt="" />
+        </section>
+
+        <!-- slide 11 -->
+        <section class="code">
+          <h4 class="grid-property">Grid</h4>
+
+          <img
+            class="grid-property-img"
+            src="./images/grid_w_items.jpg"
+            alt=""
+          />
+        </section>
+
+        <!-- slide 12 -->
+        <section class="code">
+          <p class="logo_2" style="text-transform: uppercase">
+            Why do we need it...?
+          </p>
+
+          <p class="global fragment" style="text-transform: uppercase">
+            We have the flexbox!!!
+          </p>
+        </section>
+
+        <!-- slide 13 -->
+        <section class="code">
+          <h4 class="grid-property">flex-direction: row</h4>
+          <img src="./images/flex-dir.jpg" alt="" width="900px" />
+        </section>
+
+        <!-- slide 14 -->
+        <section class="code">
+          <h4 class="grid-property">flex-direction: row</h4>
+          <img src="./images/flex-items.jpg" alt="" width="700px" />
+        </section>
+
+        <!-- slide 15 -->
+        <section class="code">
+          <h4 class="grid-property">flex-direction: row</h4>
+          <img src="./images/flex-bad.jpg" alt="" width="700px" />
+        </section>
+
+        <!-- slide 16 -->
+        <section class="code">
+          <div class="container">
+            <header><p>header</p></header>
+            <nav>
+              <p>NAV</p>
+            </nav>
+            <aside class="aside">
+              <p>
+                ASIDE
+              </p>
+            </aside>
+            <main class="section">
+              <p>
+                MAIN
+              </p>
+            </main>
+
+            <footer>
+              <p>Footer</p>
+            </footer>
+          </div>
+        </section>
+
+        <!-- slide 17 -->
+        <section>
+          <h2 style="font-size:28px;">CSS</h2>
+          <div class="code-container" style="max-width: 50vw; margin: 0 auto;">
+            <pre style="width: 100%; margin: 0; box-shadow: none">
+              <code data-trim contenteditable>
+.container {
+    display: grid;           
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 110px 50px 70px 300px 70px;
+
+          }
+            </code>
+          </pre>
+          </div>
+        </section>
+
+        <!-- slide 18 -->
+        <section>
+          <h2 style="font-size:28px;">CSS</h2>
+          <div class="code-container" style="max-width: 50vw; margin: 0 auto;">
+            <pre style="width: 100%; margin: 0; box-shadow: none;">
+                <code data-trim contenteditable style="max-height: none">
+header {
+  grid-area: header;
+  
+}
+                    
+nav {            
+  grid-area: nav;
+    
+}
+
+main {
+  grid-area: main;
+    
+}
+                    
+aside {
+  grid-area: aside;
+    
+}
+              </code>
+            </pre>
+          </div>
+        </section>
+
+        <!-- slide 19 -->
+        <section>
+          <h2 style="font-size:28px;">CSS</h2>
+          <div class="code-container" style="max-width: 50vw; margin: 0 auto;">
+            <pre style="width: 100%; margin: 0; box-shadow: none">
+                <code data-trim contenteditable>
+  .container {
+      display: grid;
+                    
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 110px 50px 70px 300px 70px;
+                    
+      grid-template-areas:
+            "header header header header"
+            "nav nav nav nav"
+            "aside aside aside aside"
+            "main main main main"
+            "foot foot foot foot";
+
+            }
+              </code>
+            </pre>
+          </div>
+        </section>
+
+        <!-- slide 20 -->
+        <section>
+          <h2 style="font-size:28px;">CSS</h2>
+          <div class="code-container" style="max-width: 50vw; margin: 0 auto;">
+            <pre style="width: 100%; margin: 0; box-shadow: none">
+                  <code data-trim contenteditable style="max-height: none">
+@media screen and (min-width: 768px) {
+
+.container {
+  grid-template-columns: 110px repeat(2, 1fr) 90px 90px;
+  grid-template-rows: 70px 100px 100px 150px 70px;  
+
+  grid-template-areas: "nav header header header header"
+                       "nav  main main aside aside"
+                       "nav main main aside aside"
+                       "nav main main aside aside"
+                       "foot foot foot aside aside";
+  }}
+
+@media screen and (min-width: 960px) {
+.container {
+  grid-template-columns: repeat(2, 1fr) 100px 100px;
+
+  grid-template-rows: 70px 100px 100px 150px 70px;
+  grid-template-areas: "header header header header"
+                      "nav nav aside aside"
+                      "main main aside aside"
+                      "main main aside aside"
+                      "foot foot foot foot";
+  }}
+                </code>
+              </pre>
+          </div>
+        </section>
+
+        <!-- slide 21 -->
+        <section class="code">
+          <div class="container">
+            <header><p>header</p></header>
+            <nav>
+              <p>NAV</p>
+            </nav>
+            <aside class="aside">
+              <p>
+                ASIDE
+              </p>
+            </aside>
+            <main class="section">
+              <p>
+                MAIN
+              </p>
+            </main>
+
+            <footer>
+              <p>Footer</p>
+            </footer>
+          </div>
+        </section>
+
+        <!-- slide 22 -->
+        <section class="code">
+          <h4 class="grid-property">Flex</h4>
+
+          <div class="block-container--flex">
+            <div class="block-item--flex">
+              <h5 class="logo_1">title</h5>
+              <p class="logo_2" style="line-height: 1.5">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea
+                impedit.
+              </p>
+            </div>
+            <div class="block-item--flex ">
+              <h5 class="logo_1">title</h5>
+              <p class="logo_2" style="line-height: 1.5">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea
+                impedit.
+              </p>
+            </div>
+            <div class="block-item--flex">
+              <h5 class="logo_1">title</h5>
+              <p class="logo_2" style="line-height: 1.5">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea
+                impedit.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- slide 23 -->
+        <section>
+          <h2 style="font-size:28px;">CSS</h2>
+          <div class="code-container" style="max-width: 50vw; margin: 0 auto;">
+            <pre style="width: 100%; margin: 0; box-shadow: none">
+                <code data-trim contenteditable>
+.block-container {
+  display: grid;          
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 20px;
+}
+                  
+.block-item {
+  grid-column-end: span 3;
+}
+              </code>
+            </pre>
+          </div>
+        </section>
+
+        <!-- slide 24 -->
+        <section class="code">
+          <h4 class="grid-property">Grid</h4>
+
+          <div class="block-container">
+            <div class="block-item">
+              <h5 class="logo_1">title</h5>
+              <p class="logo_2" style="line-height: 1.5">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea
+                impedit.
+              </p>
+            </div>
+            <div class="block-item">
+              <h5 class="logo_1">title</h5>
+              <p class="logo_2" style="line-height: 1.5">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea
+                impedit.
+              </p>
+            </div>
+            <div class="block-item">
+              <h5 class="logo_1">title</h5>
+              <p class="logo_2" style="line-height: 1.5">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea
+                impedit.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- slide 25 -->
+        <section>
+          <h4 class="grid-property">Grid</h4>
+          <div class="code-container" style="max-width: 50vw; margin: 0 auto;">
+            <pre style="width: 100%; margin: 0; box-shadow: none">
+                <code data-trim contenteditable>
+.block-container {
+  display: grid;          
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 20px;
+
+  justify-content: space-around;
+}
+                  
+.block-item {
+  grid-column-end: span 3;
+}
+              </code>
+            </pre>
+          </div>
+        </section>
+
+        <!-- slide 26 -->
+        <section class="code">
+          <h4 class="grid-property">Grid</h4>
+
+          <div class="block-container">
+            <div class="block-item">
+              <h5 class="logo_1">title</h5>
+              <p class="logo_2" style="line-height: 1.5">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea
+                impedit.
+              </p>
+            </div>
+            <div class="block-item">
+              <h5 class="logo_1">title</h5>
+              <p class="logo_2" style="line-height: 1.5">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea
+                impedit.
+              </p>
+            </div>
+            <div class="block-item">
+              <h5 class="logo_1">title</h5>
+              <p class="logo_2" style="line-height: 1.5">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea
+                impedit.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        
+
+        <!-- slide 27 -->
+        <section class="code ">
+          <h4 class="grid-property">flex</h4>
+
+          <div class="flex-container">
+            <div class="flex-item" style="flex-grow: 0">
+              <img src="./images/bike.jpg" alt="">
+              <button>buy</button>
+            </div>
+            <div class="flex-item" style="flex-grow: 0">
+              <img src="./images/bike.jpg" alt="">
+              <button>buy</button>
+            </div>
+            <div class="flex-item" style="flex-grow: 0">
+              <img src="./images/bike.jpg" alt="">
+              <button>buy</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- slide 28 -->
+        <section>
+          <h4 class="grid-property">flex</h4>
+          <div class="code-container" style="max-width: 50vw; margin: 0 auto;">
+            <pre style="width: 100%; margin: 0; box-shadow: none">
+                <code data-trim contenteditable>
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+                  
+.flex-item {
+  flex: 0 1 300px;
+}
+              </code>
+            </pre>
+          </div>
+        </section>
+
+        <!-- slide 29 -->
+        <section class="code ">
+          <h4 class="grid-property">flex</h4>
+
+          <div class="flex-container">
+            <div class="flex-item" >
+              <img src="./images/bike.jpg" alt="">
+              <button>buy</button>
+            </div>
+            <div class="flex-item" >
+              <img src="./images/bike.jpg" alt="">
+              <button>buy</button>
+            </div>
+            <div class="flex-item" >
+              <img src="./images/bike.jpg" alt="">
+              <button>buy</button>
+            </div>
+        </section>
+
+        <!-- slide 30 -->
+        <section class="code ">
+          <h4 class="grid-property">Grid</h4>
+
+          <div class="grid-container">
+            <div class="grid-item" >
+              <img src="./images/bike.jpg" alt="">
+              <button>buy</button>
+            </div>
+            <div class="grid-item" >
+              <img src="./images/bike.jpg" alt="">
+              <button>buy</button>
+            </div>
+            <div class="grid-item" >
+              <img src="./images/bike.jpg" alt="">
+              <button>buy</button>
+            </div>
+        </section>
+
+        <!-- slide 31 -->
+        <section>
+          <h4 class="grid-property">Grid</h4>
+          <div class="code-container" style="max-width: 50vw; margin: 0 auto;">
+            <pre style="width: 100%; margin: 0; box-shadow: none">
+                <code data-trim contenteditable>
+grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+}
+              </code>
+            </pre>
+          </div>
+        </section>
+
+        <!-- slide 32 -->
+        <section class="code">
+          <p class="logo_2 fragment" style="text-transform: uppercase">
+            one axis - flexbox
+          </p>
+
+          <p class="global fragment" style="text-transform: uppercase">
+            two cross line axes - grid
+          </p>
+        </section>
+
+        <!-- slide 33 -->
+        <section>
+          <h3>
+            <span class="logo_1">Thank</span
+            ><span class="logo_2">You!</span>
+          </h3>
+        </section>
+
+
+        
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        theme: Reveal.getQueryHash().theme,
+        transition: Reveal.getQueryHash().transition || "default",
+        dependencies: [
+          {
+            src: "lib/js/classList.js",
+            condition: function() {
+              return !document.body.classList;
+            }
+          },
+          {
+            src: "plugin/markdown/marked.js",
+            condition: function() {
+              return !!document.querySelector("[data-markdown]");
+            }
+          },
+          {
+            src: "plugin/markdown/markdown.js",
+            condition: function() {
+              return !!document.querySelector("[data-markdown]");
+            }
+          },
+          {
+            src: "plugin/highlight/highlight.js",
+            async: true,
+            callback: function() {
+              hljs.initHighlightingOnLoad();
+            }
+          },
+          {
+            src: "plugin/zoom-js/zoom.js",
+            async: true,
+            condition: function() {
+              return !!document.body.classList;
+            }
+          },
+          {
+            src: "plugin/notes/notes.js",
+            async: true,
+            condition: function() {
+              return !!document.body.classList;
+            }
+          }
+        ]
+      });
+    </script>
+  </body>
+</html>
